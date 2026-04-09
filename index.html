@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt Weather Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>T-shirt Weather Advisor</h1>
+        <input type="text" id="city" placeholder="Voer je stad in">
+        <button onclick="getWeather()">Check</button>
+
+        <div id="result" class="result">
+            <img id="weather-img" src="" alt="" />
+            <p id="weather-text"></p>
+            <p id="weather-temp"></p>
+            <p id="weather-city"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
