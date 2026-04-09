@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-shirt Weather Advisor</title>
-    <link rel="stylesheet" href="style.css">
+    <title>T-shirt Weather App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>T-shirt Weather Advisor</h1>
-        <input type="text" id="city" placeholder="Voer je stad in">
-        <button onclick="getWeather()">Check</button>
+        <!-- Header boven input -->
+        <h1 id="header-text">Check hier of je een T-shirt aan kan!</h1>
 
+        <!-- Input veld en knop -->
+        <div class="input-group">
+            <input type="text" id="city" placeholder="Voer je stad in">
+            <button onclick="getWeather()">Check</button>
+        </div>
+
+        <!-- Resultaat sectie -->
         <div id="result" class="result">
-            <img id="weather-img" src="" alt="" />
-            <p id="weather-text"></p>
-            <p id="weather-temp"></p>
-            <p id="weather-city"></p>
+            <h2 id="weather-city"></h2>        <!-- Plaatsnaam -->
+            <img id="weather-img" src="" alt=""> <!-- Zon/regen plaatje -->
+            <p id="weather-temp"></p>          <!-- Temperatuur -->
+            <p id="weather-text"></p>          <!-- Beschrijving T-shirt advies -->
         </div>
     </div>
 
